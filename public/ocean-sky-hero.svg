@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="640" gradientUnits="userSpaceOnUse"><stop stop-color="#319be4"/><stop offset=".48" stop-color="#76d4f3"/><stop offset="1" stop-color="#d5f7ff"/></linearGradient>
+    <linearGradient id="sea" x1="800" y1="500" x2="800" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#43cbe4"/><stop offset=".42" stop-color="#138db9"/><stop offset="1" stop-color="#07517b"/></linearGradient>
+    <linearGradient id="sun" x1="1080" y1="110" x2="1280" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#fffbd4"/><stop offset=".48" stop-color="#fff3a8"/><stop offset="1" stop-color="#ffd77a"/></linearGradient>
+    <linearGradient id="farLand" x1="0" y1="420" x2="0" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#c9f4e9"/><stop offset="1" stop-color="#54b7bd"/></linearGradient>
+    <linearGradient id="nearLand" x1="400" y1="480" x2="600" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#4bb9b9"/><stop offset="1" stop-color="#12617e"/></linearGradient>
+    <linearGradient id="wave" x1="160" y1="660" x2="1400" y2="840" gradientUnits="userSpaceOnUse"><stop stop-color="#53d5f0" stop-opacity=".1"/><stop offset=".52" stop-color="#b4f5ff" stop-opacity=".86"/><stop offset="1" stop-color="#49bde6" stop-opacity=".16"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 320 -500 0 1190 280)" gradientUnits="userSpaceOnUse"><stop stop-color="#9ceeff" stop-opacity=".5"/><stop offset="1" stop-color="#7dddf6" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="cloudShadow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="15"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v900H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v680H0z"/>
+  <circle cx="1195" cy="258" r="154" fill="#9ceeff" opacity=".2" filter="url(#soft)"/>
+  <circle cx="1195" cy="258" r="104" fill="url(#sun)"/>
+  <ellipse cx="1195" cy="258" rx="184" ry="35" fill="#c4f5ff" opacity=".12"/>
+  <g fill="#e2f8ff" opacity=".5">
+    <path d="M150 220c13-45 55-75 103-75 51 0 92 29 107 73 39 2 70 33 70 72H110c0-38 17-62 40-70Z" opacity=".22"/>
+    <path d="M760 112c11-31 42-52 77-52 38 0 68 21 79 51 30 2 53 25 53 53H730c0-27 12-44 30-52Z" opacity=".27"/>
+    <path d="M1370 390c10-32 39-54 74-54 36 0 66 21 77 53 28 1 51 24 51 51h-207c0-27 12-44 29-50Z" opacity=".2"/>
+  </g>
+  <!-- Soft anime-style cloud contours and sun rays -->
+  <g fill="none" stroke="#f1fdff" stroke-linecap="round" opacity=".68">
+    <path d="M126 220c9-40 43-67 84-70m26-3c45 2 78 28 92 67m-174 4c18-14 38-18 58-11" stroke-width="4"/>
+    <path d="M741 112c9-27 33-46 62-50m30 0c30 4 51 21 62 48" stroke-width="3"/>
+    <path d="m1195 96 0-28m116 76 24-16m-260 16-23-17m259 245 20 6" stroke-width="5" opacity=".6"/>
+  </g>
+  <g fill="#fff6df" opacity=".9">
+    <path d="m1014 179 5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12Z"/>
+    <path d="m1361 286 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" opacity=".75"/>
+    <circle cx="1061" cy="278" r="3"/><circle cx="1326" cy="203" r="2.5"/>
+  </g>
+  <ellipse cx="1175" cy="526" rx="280" ry="44" fill="#d1f8ff" opacity=".38" filter="url(#cloudShadow)"/>
+  <path fill="url(#farLand)" d="m0 500 120-60 70 33 100-96 82 54 91-70 105 89 79-45 105 87 103-63 70 49 101-93 89 58 95-34 115 69 75-21v143H0V500Z" opacity=".72"/>
+  <path fill="#d0f2f3" d="m290 377 82 54-49-12-33-42Zm172-16 106 89-66-41-40-48Zm565 24 101-93-64 77-37 16Zm190 3 89 58-67-31-22-27Z" opacity=".52"/>
+  <path fill="url(#sea)" d="M0 536c166-22 271 26 438 9 153-16 240-11 373 6 183 24 334-33 471-16 132 16 219 6 318-14v379H0V536Z"/>
+  <path d="M0 548c153-24 281 20 438 7 153-13 239-9 373 8 178 23 331-28 471-14 131 13 212 5 318-15" stroke="#d5fbff" stroke-opacity=".55" stroke-width="4"/>
+  <path d="M0 628c190-35 307 28 490 4 202-27 305 23 476 17 185-7 283-49 438-24 81 13 139 14 196 3" stroke="url(#wave)" stroke-width="9"/>
+  <path d="M0 712c167-24 280 28 451 8 181-22 318 28 474 14 192-17 310-46 463-22 80 12 148 13 212 1" stroke="url(#wave)" stroke-width="6" opacity=".85"/>
+  <path d="M190 820c121-19 206 9 324-4m432 22c111-16 182-5 292-17m-1310-54c92-10 148 4 226-4" stroke="#91eaff" stroke-opacity=".33" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tiny drifting petals catch the sunlight without crowding the scene -->
+  <g fill="#ffe0e8" opacity=".83">
+    <path d="M839 455c8-10 15-12 19-8-2 7-8 12-19 8Z"/><path d="M846 449c-7-9-7-16-2-19 6 4 8 11 2 19Z"/><circle cx="844" cy="453" r="2" fill="#ffc7d5"/>
+    <path d="M1430 563c7-8 12-9 15-6-2 6-7 9-15 6Z"/><path d="M1436 558c-5-7-5-12-1-14 4 3 6 8 1 14Z"/><circle cx="1434" cy="561" r="1.6" fill="#ffc7d5"/>
+  </g>
+  <path d="M608 684c108-12 188-8 267 2m-486 73c71-7 126-4 182 5m472 29c91-10 159-9 225 1" stroke="#e5fcff" stroke-opacity=".48" stroke-width="2" stroke-linecap="round"/>
+  <path fill="url(#nearLand)" d="M0 650c82-49 142-74 221-68 77 6 117 57 185 56 72-1 119-47 185-46 88 2 121 54 201 61v247H0V650Z" opacity=".74"/>
+  <path d="M1200 490c102 40 182 39 255 19 53-15 101-14 145 0v72c-118 31-250 8-400-21v-70Z" fill="#a8e5ec" opacity=".15"/>
+  <g fill="#e4fbff" opacity=".74"><circle cx="136" cy="299" r="2"/><circle cx="634" cy="216" r="2"/><circle cx="1442" cy="177" r="2"/><circle cx="1018" cy="91" r="1.6"/><circle cx="532" cy="310" r="1.5"/></g>
+</svg>

@@ -1,0 +1,5 @@
+#supported-tools .category-grid { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+#supported-tools .category-card { min-height: 205px; }
+#supported-tools .category-hidden { display: grid; gap: 6px; }
+#supported-tools .supported-tool { display: block; padding-top: 5px; border-top: 1px solid rgba(255,255,255,.16); color: #d8e9f4; font-size: .78rem; }
+#supported-tools .category-action { margin-top: 12px; }

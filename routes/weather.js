@@ -1,0 +1,2 @@
+const express=require('express');const {getWeather,toSpeech}=require('../services/weather');const router=express.Router();
+router.get('/',async(req,res)=>{try{const city=String(req.query.city||req.query.location||'').trim();if(!city)return res.status(400).json({error:'Thiếu city/location'});const data=await getWeather(city,req.query.days||7);res.json({ok:true,...data,speech:toSpeech(data)});}catch(e){res.status(500).json({error:e.message});}});module.exports=router;

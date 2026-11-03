@@ -1,0 +1,21 @@
+{
+  "name": "xiaozhi-api-server",
+  "version": "1.0.0",
+  "description": "Xiaozhi API + MCP server with YouTube, weather, news, suggestions and MySQL storage",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "node scripts/install-ytdlp.js && npm cache clean --force",
+    "install:ytdlp": "node scripts/install-ytdlp.js",
+    "update:ytdlp": "node scripts/install-ytdlp.js --force",
+    "start": "node --expose-gc --max-old-space-size=192 server.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.23.1",
+    "rss-parser": "^3.13.0",
+    "soundcloud-downloader": "^1.0.0",
+    "yt-search": "^2.13.1"
+  }
+}

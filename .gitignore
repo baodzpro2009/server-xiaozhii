@@ -1,0 +1,7 @@
+node_modules/
+yt-dlp/
+ffmpeg-bin/
+.env
+youtube-cookies.txt
+cookies.txt
+npm-debug.log*
